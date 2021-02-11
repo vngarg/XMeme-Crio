@@ -1,6 +1,7 @@
 const XMeme = require('../Models/XMeme');
 const uuid = require('uuid');
 
+// This API adds a meme to the database. It creates a unique id & then returns it if meme is added successfully, otherwise returns 400. It also checks whether the database is empty or not.
 exports.PostMeme = async (req, res) => {
     const { name, url, caption } = req.body;
     const id = uuid.v4();

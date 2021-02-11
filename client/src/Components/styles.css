@@ -1,20 +1,24 @@
+/* Styling for the buttons in the app */
 .button:hover {
     color: blue;
     border: 2px solid blue;
     background-color: white;
 }
 
+/* Footer styling */
 .footer {
     height: 40px;
     background-color: rgb(200, 200, 200);
 }
 
+/* Styling for the caption that is displayed alongside the meme */
 .caption {
     color: rgb(100, 100, 100);
     font-size: 13px;
     margin: 4px 0;
 }
 
+/* Container which contains all the memes */
 .mainContainer {
     height: 60vh;
     overflow-y: scroll;
@@ -24,6 +28,7 @@
     width: 90%;
 }
 
+/* Edit & Delete Icons */
 .edit-icon:hover {
     color: blue;
     cursor: pointer;

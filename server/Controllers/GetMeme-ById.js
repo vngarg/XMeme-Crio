@@ -1,5 +1,6 @@
 const XMeme = require('../Models/XMeme')
 
+// This API requires meme id & then finds it in the database & returns it if found otherwise returns 400.
 exports.GetMemeById = (req, res) => {
     const id = req.params.id;
     

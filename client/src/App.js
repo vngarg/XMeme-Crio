@@ -1,4 +1,3 @@
-import "./App.css";
 import Menu from "./Components/Menu";
 import GetAllMemes from "./Components/GetAllMemes";
 import Footer from "./Components/Footer";

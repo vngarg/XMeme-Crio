@@ -1,5 +1,6 @@
 const XMeme = require('../Models/XMeme');
 
+// This API updates the meme. It finds the meme using meme id & then updates the new data. It returns 200 if everything works fine otherwise returns 400.
 exports.UpdateMeme = (req, res) => {
     const id = req.params.id;
     const { name, caption, url } = req.body;

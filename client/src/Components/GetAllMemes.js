@@ -1,3 +1,4 @@
+// This file contains the all the working part
 import React, { Component } from "react";
 import Loader from "react-loader";
 import axios from "axios";
@@ -21,6 +22,7 @@ class GetAllMemes extends Component {
     error: null,
   };
 
+  // This function calls the backend POST API /memes & returns all the memes that are preset in the database.
   GetAllMemes = () => {
     this.setState({
       error: "",
@@ -55,6 +57,7 @@ class GetAllMemes extends Component {
     return this.GetAllMemes();
   }
 
+  // This function is used to check whether the name, caption & url fields are empty or not. It returns a boolean value, if they are empty then it stores the value in state variable error & displays the error to the user. 
   validation = () => {
     this.setState({
       error: "",
@@ -82,8 +85,9 @@ class GetAllMemes extends Component {
     return true;
   };
 
+  // This function receives the id of the meme & call DELETE API /delete-meme/:id to deleet a meme. If meme is deleted, it returns 200 status otherwise 400.
   DeleteMeme = (id) => {
-    console.log("ID: ", id);
+    
     axios({
       method: "DELETE",
       url: `${baseUrl}/delete-meme/${id}`,
@@ -94,12 +98,13 @@ class GetAllMemes extends Component {
         this.GetAllMemes();
       })
       .catch((error) => {
+        alert("Can't delete the meme. Please try again.");
         console.log("Error in deleting meme: ", error);
       });
   };
 
+  // This function receives name, caption & url before updating the meme & sets them to respective state variables.
   updateMeme = (id, name, caption, url) => {
-    // console.log(id, name, caption, url)
     this.setState({
       id,
       name,
@@ -108,6 +113,7 @@ class GetAllMemes extends Component {
     });
   };
 
+  // This function takes state variables & calls the PATCH API /update-meme/:id to update the changes. 
   submitMemeUpdate = () => {
     const data = {
       name: this.state.name,
@@ -139,6 +145,7 @@ class GetAllMemes extends Component {
     }
   };
 
+  // This function is used to add a new meme to the database. It checks whether the fields are empty or not & then calls the POST API /memes
   addMeme = () => {
     const data = {
       name: this.state.name,
@@ -179,6 +186,7 @@ class GetAllMemes extends Component {
     }
   };
 
+  // This function is used when the input field values are changes. 
   change = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
@@ -188,7 +196,7 @@ class GetAllMemes extends Component {
   render() {
     return (
       <>
-        {/* Add a meme */}
+        {/* Modal to add a meme */}
         <div
           className="modal fade"
           id="exampleModal1"
@@ -222,7 +230,6 @@ class GetAllMemes extends Component {
                       placeholder="Enter your name"
                       type="text"
                       className="form-control"
-                      // id="InputEmail1"
                       required
                     />
                   </div>
@@ -237,7 +244,6 @@ class GetAllMemes extends Component {
                       placeholder="Enter the caption"
                       type="text"
                       className="form-control"
-                      // id="InputPassword1"
                       required
                     />
                   </div>
@@ -252,7 +258,6 @@ class GetAllMemes extends Component {
                       placeholder="Enter the Image Url"
                       type="text"
                       className="form-control"
-                      // id="ImageUrl"
                       required
                     />
                   </div>
@@ -268,6 +273,7 @@ class GetAllMemes extends Component {
                     {this.state.error}
                   </div>
                 ) : null}
+
               </div>
               <div className="modal-footer">
                 <button
@@ -282,14 +288,14 @@ class GetAllMemes extends Component {
                   type="button"
                   className="btn btn-primary"
                 >
-                  Submit
+                  Add
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Update Meme Modal */}
+        {/* Modal to update the Meme */}
         <div
           className="modal fade"
           id="exampleModal"
@@ -387,6 +393,7 @@ class GetAllMemes extends Component {
           </div>
         </div>
 
+                {/* Add a meme button */}
         <div className="text-center mt-5">
           <input
             type="button"
@@ -396,6 +403,8 @@ class GetAllMemes extends Component {
             data-bs-target="#exampleModal1"
           />
         </div>
+
+        {/* Main Container that displays all the memes */}
         <div className="container mt-4 mainContainer">
           <div className="row">
             <Loader loaded={this.state.loading}>
@@ -422,14 +431,6 @@ class GetAllMemes extends Component {
                           >
                             <i
                               className="fas fa-edit edit-icon"
-                              // onClick={() =>
-                              //   this.updateMeme(
-                              //     name[0],
-                              //     name[1],
-                              //     name[2],
-                              //     name[3]
-                              //   )
-                              // }
                             />
                           </a>
                           <i
