@@ -1,5 +1,5 @@
 const config = {
-    baseUrl: "http://localhost:8080",
+    baseUrl: "https://xmeme-sg.herokuapp.com",
 }
 
 export default config;
