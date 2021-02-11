@@ -1,0 +1,9 @@
+{
+    "name": "XMeme FUll-Stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cd server/server.js",
+  "scripts": {
+    "build": "cd server && node server.js"
+  }
+}
