@@ -75,3 +75,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - [x] Make a little bit more responsive, mobile version has a horizontal scroll.
 - [ ] Search meme by id banana h frontend p
 - [ ] Meme addition k time, empty fields ka check message display nmhi ho raha(ya to message display karado ya fir frontend p checck aal).
+- [ ] Alert on meme delete.
