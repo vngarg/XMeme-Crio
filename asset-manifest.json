@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/XMeme-Crio/static/css/main.8cd8dcb4.chunk.css",
+    "main.js": "/XMeme-Crio/static/js/main.e6d1c29c.chunk.js",
+    "main.js.map": "/XMeme-Crio/static/js/main.e6d1c29c.chunk.js.map",
+    "runtime-main.js": "/XMeme-Crio/static/js/runtime-main.e5a5eb7a.js",
+    "runtime-main.js.map": "/XMeme-Crio/static/js/runtime-main.e5a5eb7a.js.map",
+    "static/js/2.d732aad8.chunk.js": "/XMeme-Crio/static/js/2.d732aad8.chunk.js",
+    "static/js/2.d732aad8.chunk.js.map": "/XMeme-Crio/static/js/2.d732aad8.chunk.js.map",
+    "index.html": "/XMeme-Crio/index.html",
+    "static/css/main.8cd8dcb4.chunk.css.map": "/XMeme-Crio/static/css/main.8cd8dcb4.chunk.css.map",
+    "static/js/2.d732aad8.chunk.js.LICENSE.txt": "/XMeme-Crio/static/js/2.d732aad8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5a5eb7a.js",
+    "static/js/2.d732aad8.chunk.js",
+    "static/css/main.8cd8dcb4.chunk.css",
+    "static/js/main.e6d1c29c.chunk.js"
+  ]
+}
