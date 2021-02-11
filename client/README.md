@@ -71,8 +71,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - [ ] Add Comments in back end & front end
 - [x] Solve footer issue, make it fixed at bottom.
-- [ ] Show meme as soon as it is added. Abhi page load karna pad raha h & same cheez delete k case m bhi.
+- [x] Show meme as soon as it is added. Abhi page load karna pad raha h & same cheez delete k case m bhi.
 - [x] Make a little bit more responsive, mobile version has a horizontal scroll.
 - [ ] Search meme by id banana h frontend p
-- [ ] Meme addition k time, empty fields ka check message display nmhi ho raha(ya to message display karado ya fir frontend p checck aal).
-- [ ] Alert on meme delete.
+- [x] Meme addition k time, empty fields ka check message display nmhi ho raha(ya to message display karado ya fir frontend p checck aal).
+- [x] Alert on meme delete.
+- [ ] Add date & time of creation of meme.
+- [x] Delete AddMeme file from frontend once everything is done & all checks are done as well. 
