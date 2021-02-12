@@ -12,6 +12,5 @@ npm start
 - This will run the application on PORT 3000
 
 ### TODO
-- [ ] Add Comments in back end & front end
 - [ ] Search meme by id banana h frontend p
 - [ ] Add date & time of creation of meme.

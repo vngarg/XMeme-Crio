@@ -29,6 +29,10 @@
 }
 
 /* Edit & Delete Icons */
+.delete-icon {
+    margin-top: 3px;
+}
+
 .edit-icon:hover {
     color: blue;
     cursor: pointer;
